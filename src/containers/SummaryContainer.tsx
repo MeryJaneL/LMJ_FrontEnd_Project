@@ -4,7 +4,7 @@ import 'font/fonts.css';
 import TypingAnime from 'components/TypingAnime';
 
 const summaries = {
-    mjtitle : '안녕하세요\n'
+    mjtitle : '수정본 안녕하세요\n'
               + '신입 프론트엔드 개발자 이명재입니다',
     mjdescription : '이 페이지는 React, styled-conmponents로 이루어져 있습니다.'
 }
