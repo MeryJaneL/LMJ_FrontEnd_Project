@@ -101,7 +101,6 @@ function TypingAnime({id, contents} : typingProps){
             thread = thread.concat(typingtxt[typingIdx]);
             settypetext(thread);
             typingIdx++; 
-            console.log(thread);
           } else{ 
             stopTyping();
           }
