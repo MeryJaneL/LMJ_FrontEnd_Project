@@ -10,6 +10,45 @@ const TypingBlock = styled.div<{animeid : string}>`
         ${props => `.makecursor-${props.animeid}`}{
             display : inline;   
             font-weight : 100;     
+
+
+            -webkit-animation-name : mjcursor;
+            -webkit-animation-duration : 0.5s;
+            -webkit-animation-iteration-count : infinite;
+            @-webkit-keyframes mjcursor{
+                0%{color : transparent}
+                50%{color : #000000}
+                100%{color :  transparent}
+            }
+
+            -moz-animation-name : mjcursor;
+            -moz-animation-duration : 0.5s;
+            -moz-animation-iteration-count : infinite;
+            @-moz-keyframes mjcursor{
+                0%{color : transparent}
+                50%{color : #000000}
+                100%{color :  transparent}
+            }
+
+            -ms-animation-name : mjcursor;
+            -ms-animation-duration : 0.5s;
+            -ms-animation-iteration-count : infinite;
+            @-ms-keyframes mjcursor{
+                0%{color : transparent}
+                50%{color : #000000}
+                100%{color :  transparent}
+            }
+
+            -o-animation-name : mjcursor;
+            -o-animation-duration : 0.5s;
+            -o-animation-iteration-count : infinite;
+            @-o-keyframes mjcursor{
+                0%{color : transparent}
+                50%{color : #000000}
+                100%{color :  transparent}
+            }
+
+            
             animation-name : mjcursor;
             animation-duration : 0.5s;
             animation-iteration-count : infinite;
