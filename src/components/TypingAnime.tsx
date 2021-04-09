@@ -71,18 +71,43 @@ function TypingAnime({id, contents} : typingProps){
     let typingtxt = contents.split('');
 
     useEffect(()=>{        
-            setInterval(typing, 100);       
+            //setInterval(typing, 100);       
+            startTyping();
     },[])
     let thread = '';
-    const typing = () => {
+    /*const typing = () => {
         if(typingIdx<typingtxt.length){
             thread = thread.concat(typingtxt[typingIdx]);
             settypetext(thread);
             typingIdx++; 
           } else{ 
-            clearInterval();
+            clearInterval(undefined);
+          }
+    }*/
+
+
+    //익스플로러 오류해결용 해체분
+    let isPause = false;
+    let typingtimer : NodeJS.Timeout;
+    function startTyping(){
+        isPause = false;
+        typingtimer = setInterval(typings, 100);        
+    }
+    function stopTyping(){
+        clearInterval(typingtimer);
+    }
+    const typings = () => {
+        if(typingIdx<typingtxt.length){
+            thread = thread.concat(typingtxt[typingIdx]);
+            settypetext(thread);
+            typingIdx++; 
+            console.log(thread);
+          } else{ 
+            stopTyping();
           }
     }
+
+
     return(
         <TypingBlock className = {`typinganime-${id.toString()}`} animeid = {id.toString()}>
             {typetext}
