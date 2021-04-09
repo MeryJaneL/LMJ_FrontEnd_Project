@@ -9,7 +9,7 @@ import IntroContainer from './IntroContainer';
 import SummaryContainer from './SummaryContainer';
 
 const BodyContainterBlock = styled.div`
-    font-family : 'exile', 'cookie';
+    font-family : 'exile', sans-serif !important;
     font-size : 16px;
     font-weight : 400;
     color : #333;

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'exile';
-    src : url('./YDSapphIIM.ttf'), format('embedded-opentype');
+    src : url('./YDSapphIIM.ttf');    
 }
 @font-face {
     font-family: 'cookie';
